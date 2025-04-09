@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $firstUrl = htmlspecialchars($urls[0]);
     $iframeCode = '<div class="div-frame">
                     <div class="frame">
-                        <iframe width="600" height="480" src="' . $firstUrl . '" allow="autoplay; encrypted-media" scrolling="no" frameborder="0" allowfullscreen id="iframeResult"></iframe>
+                        <iframe  src="' . $firstUrl . '" allow="autoplay; encrypted-media" scrolling="no" frameborder="0" allowfullscreen id="iframeResult"></iframe>
                     </div>
                     <ul class="tab-server" id="serverid">
                         <li class="server">Server +
