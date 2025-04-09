@@ -129,7 +129,7 @@
     /* Add responsive styling for iframe */
     #iframeResult {
         width: 100%;
-        height: 400px;
+        height: 600px;
         border: 2px solid #ddd;
         border-radius: 10px;
     }

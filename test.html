@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+<div class="div-frame">
+    <div class="frame">
+        <iframe src="https://www.youtube.com/embed/Gam-aBnSB4w?si=FF1kpOV_dC58cQxd" allow="autoplay; encrypted-media" scrolling="no" frameborder="0" allowfullscreen id="iframeResult"></iframe>
+    </div>
+    <ul class="tab-server" id="serverid">
+        <li class="server">Server++
+            <ul class="sub-server"><li class="btn active">
+            <a href="javascript:void(0)" onclick="go('https://www.youtube.com/embed/Gam-aBnSB4w?si=FF1kpOV_dC58cQxd')">youtube</a>
+        </li>   </ul>
+    </li>
+</ul>
+</div>
+<script>
+function go(loc) {
+    document.getElementById("iframeResult").src = loc;
+}
+var btnContainer = document.getElementById("serverid");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+            current[0].classList.remove("active");
+        }
+        this.classList.add("active");
+    });
+}
+</script>
