@@ -21,6 +21,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Multi Iframe</title>
+    <link rel="icon" href="https://s.w.org/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
